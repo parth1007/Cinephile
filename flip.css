@@ -1,0 +1,35 @@
+
+.front {
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: transform .6s linear;
+    width: 100%;
+}
+.front img{
+    height :100%;
+    width : 100%;
+    object-fit: cover;
+}
+.back {
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: transform .6s linear;
+    width: 100%;
+}
+.back img{
+
+    height :100%;
+    width : 100%;
+    object-fit: cover;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(0deg);
+}

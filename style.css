@@ -1,0 +1,122 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(26, 23, 23);
+}
+.heading{
+    color: white;
+}
+
+
+/****************** HEADER - Start **************/
+.header{
+    background-color: rgba(0, 0, 0, 0.549);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    margin-right: 1rem;
+}
+.title{
+    padding: 10px;
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+.list{
+    list-style: none;
+    display: flex;
+}
+.list-item{
+    padding: .5rem;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1.1rem;
+}
+/****************** HEADER - END ***************/
+/****************** PAGE 1 START *********************/
+.heading1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    padding-top: 5rem;
+    color: white;
+}
+.page1{
+    min-height: 100vh;
+}
+.container1{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 5rem;
+}
+.card1{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height:20rem;
+    width:15rem;
+    border: 2px solid black;
+    flex-direction: column;
+    min-width: 15rem;
+    padding: 1rem;
+    margin: 1rem;
+    opacity: 1;
+    animation: appear 1s linear;
+
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.container1 a{
+    text-decoration: none;
+}
+/****************** PAGE 1 END *********************/
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 4rem;
+}
+.heading:first-child{
+
+    padding-top:2rem;
+}
+.container{
+
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    column-gap: 6rem;
+    row-gap: 3rem;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.card {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid rgb(65, 57, 57);
+    overflow: hidden;
+}
+.poster{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gradient{
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    /* background-image: radial-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5), rgba(0,0,0,.9)); */
+}
