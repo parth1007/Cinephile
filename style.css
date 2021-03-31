@@ -7,6 +7,9 @@ body{
 .heading{
     color: white;
 }
+html{
+    scroll-behavior:smooth ;
+}
 
 
 /****************** HEADER - Start **************/
@@ -52,6 +55,7 @@ body{
 .container1{
     display: flex;
     justify-content:space-around;
+    flex-wrap: wrap;
     padding-top: 5rem;
 }
 .card1{
@@ -119,4 +123,79 @@ body{
     height: 20rem;
     width: 20rem;
     /* background-image: radial-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5), rgba(0,0,0,.9)); */
+}
+
+.center-con {
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.round {
+    position: relative;
+    border: 3px solid #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.round .sp {
+    z-index: 999;
+    height: 3px;
+    margin:1px;
+    width: 20px;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+.round .sp:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(135deg);
+    left: 25%;
+    top: 20px;
+}
+
+.round .sp:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 45%;
+    top: 20px;
+}
+
+.round .sp:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(135deg);
+    left: 25%;
+    top: 30px;
+}
+
+.round .sp:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 45%;
+    top: 30px;
+}
+
+.round:hover .sp:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+.round:hover .sp:nth-child(2) {
+    transform: rotate(225deg);
+}
+
+.round:hover .sp:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.round:hover .sp:nth-child(4) {
+    transform: rotate(225deg);
 }

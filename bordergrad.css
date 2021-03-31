@@ -33,6 +33,10 @@
     background: linear-gradient(45deg,#ffbc00,#ff0058);
     filter: blur(20px);
 }
+.card1:hover .card1::after{
+    background: linear-gradient(45deg,#166ddf,#ff0058);
+    display: none;
+}
 span{
     position: absolute;
     top: 6px;
